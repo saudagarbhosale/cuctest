@@ -75,15 +75,15 @@
     <configuration>
 		<includes>
 			<include>
-				 TestFailure.java
+				Test.java
 			</include>
 			
 				</includes>
 				<excludes>
 					<exclude>
 						
-				
-			Test.java
+				 TestFailure.java
+			
 					</exclude>
 				</excludes>
     <properties>

@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Login_page {
 
-	@FindBy(xpath="//input[@id='username']") private WebElement un;
-	@FindBy(xpath="//input[@id='password']") private WebElement pw;
+	@FindBy(xpath="//input[@name='username']") private WebElement un;
+	@FindBy(xpath="//input[@name='password']") private WebElement pw;
 	@FindBy(xpath="//button[@type='submit']") private WebElement log;
-	@FindBy(xpath="//div[@class='flash error']") private WebElement err;
+	@FindBy(xpath="//*[text()='Invalid credentials']") private WebElement err;
 	
 	
 	public Login_page(WebDriver driver)

@@ -9,12 +9,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBaseClass {
 
+	public  WebDriver driver;
 	public WebDriver Openbrowser()
 	{
 		WebDriverManager.edgedriver().setup();
-		WebDriver driver=new EdgeDriver();
-		driver.get("https://the-internet.herokuapp.com/login");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 driver=new EdgeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		return driver;
 	}
 }
